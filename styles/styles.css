@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f5f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #1e2a24;
+    padding: 10px 20px;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e2a24;
+    font-size: 16px;
+}
+
+.baner {
+    width: 100%;
+    height: 755px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13, 26, 18, 0.82) 0%,
+            rgba(13, 26, 18, 0.55) 50%,
+            rgba(13, 26, 18, 0.15) 100%
+        ),
+        url("../imgs/baner.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    position: relative;
+}
+
+.baner h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.baner h1.green {
+    color: #61c589;
+    margin-bottom: 90px;
+}
+
+.badge {
+    position: absolute;
+    left: 45%;
+    bottom: 130px;
+    color: #aeeabd;
+    background: rgba(46, 125, 79, 0.35);
+    border: 1px solid rgba(92, 186, 120, 0.5);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.baner h3 {
+    position: absolute;
+    bottom: 120px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 480px;
+    border-left: 3px solid #24c164;
+    padding-left: 30px;
+}
+
+.baner-btn {
+    position: absolute;
+    right: 10%;
+    top: 440px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2e7d4f;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.baner-btn:hover {
+    background-color: #1da352;
+}
+
+.what {
+    padding: 50px;
+    background-color: #ddebdd;
+        height: 450px;
+}
+.what h1 {
+    font-size: 40px;
+    margin: 50px 0px 50px 0px;
+
+    
+}
+.blocks {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.block h3 {
+    font-size: 24px;
+    color: #1E2A24;
+}
+.block p {
+    font-size: 16px;
+    color: #5B6660;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.goal {
+    padding: 50px;
+}
+.goal h1 {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.goal-cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.goal-card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 350px;
+    height: 300px;
+    padding: 40px 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    align-items: start;
+    gap: 15px;
+}
+.goal-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.goal-card p {
+    font-size: 16px;
+    color: #5B6660;
+    margin: 0;
+    line-height: 1.4;
+}
+.goal-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2E7D4F;
+    margin-top: auto;
+}
+.goal-card a {
+    text-decoration: none;
+    color: #FF8A3D;
+    font-weight: bold;
+}
+footer {
+    background-color: #1E2A24;
+    padding: 70px 10%;
+}
+
+.copitrte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copitrte-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copitrte h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.copitrte p {
+    font-size: 16px;
+    color: #7F8C85;
+}
+
+.footer-nav {
+    margin-right: auto;
+    padding-left: 25%;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #B9C4BD;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    color: white;
+}
