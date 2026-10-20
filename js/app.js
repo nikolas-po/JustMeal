@@ -3,6 +3,8 @@ let currentFilter = 'Все';
 function updateCatalog() {
   const cardsContainer = document.querySelector('.cards');
   const sortSelect = document.querySelector('.sort-select');
+  if (!cardsContainer || !sortSelect) return;
+
   const cardsArray = Array.from(cardsContainer.querySelectorAll('.card'));
 
   cardsArray.sort((a, b) => {
@@ -36,3 +38,20 @@ function filterCatalog(clickedButton) {
 function sortCatalog() {
   updateCatalog();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainImg = document.getElementById('mainImg');
+  const thumbs = document.querySelectorAll('.thumb');
+
+  if (mainImg && thumbs.length > 0) {
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+        
+        const thumbImgSrc = thumb.querySelector('img').getAttribute('src');
+        mainImg.setAttribute('src', thumbImgSrc);
+      });
+    });
+  }
+});
