@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Меню</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+            <script src="./js/app.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="./imgs/logo.png" alt="" width="300px" height="130px" />
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./menu.html">Меню</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav>
+                <ol class="breadcrumbs">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li>Меню</li>
+                </ol>
+            </nav>
+
+            <h1>Меню рационов</h1>
+            <h3>Готовые рационы на неделю — выберите цель и калорийность</h3>
+
+            <div class="filtrs">
+                <ul class="categries">
+                    <li><button class="filter-btn active" onclick="filterCatalog(this)">Все</button></li>
+                    <li><button class="filter-btn" onclick="filterCatalog(this)">Похудение</button></li>
+                    <li><button class="filter-btn" onclick="filterCatalog(this)">Набор массы</button></li>
+                    <li><button class="filter-btn" onclick="filterCatalog(this)">Веган</button></li>
+                </ul>
+                
+                <div class="sort-wrapper">
+                    <select class="sort-select" onchange="sortCatalog()">
+                        <option value="price">Сортировка: по цене</option>
+                        <option value="price-desc">Сортировка: по цене (убывание)</option>
+                    </select>
+                </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image-block">
+                        <img src="./imgs/gerl.png" alt="Гёрл">
+                        <span class="badge">Похудение</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Гёрл</h2>
+                        <p class="card-info">1200 ккал в день · 4 приёма пищи</p>
+                        <p class="card-bzhu">Б 85 · Ж 38 · У 130</p>
+
+                        <div class="card-footer">
+                            <div class="card-price-block">
+                                <span class="price">5 490 ₽</span>
+                                <span class="period">за 7 дней</span>
+                            </div>
+                            <button class="card-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-block">
+                        <img src="./imgs/smaev.png" alt="Мини Смаев">
+                        <span class="badge"">Набор массы</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Мини Смаев</h2>
+                        <p class="card-info">2500 ккал в день · 4 приёма пищи</p>
+                        <p class="card-bzhu">Б 160 · Ж 70 · У 250</p>
+
+                        <div class="card-footer">
+                            <div class="card-price-block">
+                                <span class="price">5 900 ₽</span>
+                                <span class="period">за 7 дней</span>
+                            </div>
+                            <button class="card-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-block">
+                        <img src="./imgs/cow.png" alt="Коровка">
+                        <span class="badge" ">Веган</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Коровка</h2>
+                        <p class="card-info">1400 ккал в день · 4 приёма пищи</p>
+                        <p class="card-bzhu">Б 70 · Ж 45 · У 150</p>
+
+                        <div class="card-footer">
+                            <div class="card-price-block">
+                                <span class="price">5 100 ₽</span>
+                                <span class="period">за 7 дней</span>
+                            </div>
+                            <button class="card-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+        </main>
+        <footer>
+            <div class="copitrte">
+                <div class="copitrte-text">
+                    <h1>JustMeal</h1>
+                    <p>© 2026 JustMeal</p>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./menu.html">Меню</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
